@@ -1,6 +1,6 @@
-import joi from "joi";
+import Joi from "joi";
 
-export const battleSchema = joi.object({
-    firstUser: joi.string().required(),
-    secondUser: joi.string().required()
+export const userSchema: object = Joi.object({
+    firstUser: Joi.string().required(),
+    secondUser: Joi.string().required()
 });
